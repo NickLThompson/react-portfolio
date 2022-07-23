@@ -1,18 +1,25 @@
-import React from 'react'
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Home from "./components/Home";
-import Portfolio from "./components/Portfolio";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
+import React from 'react';
+import Navigation from "./Navigation";
 
-function Header() {
-  return (
-    <header className="header">
-        <h1>Home</h1>
-    </header>
-  );
+function Header(props) {
+    const { currentTab, setCurrentTab } = props;
+
+    return (
+        <header>
+            <div>
+                <h2>Nickolas Thompson</h2>
+                <h3>Junior Full Stack Web Developer</h3>
+            </div>
+            <div>
+                <Navigation
+                    currentTab = { currentTab }
+                    setcurrentTab = { setCurrentTab }>
+                </Navigation>
+            </div>
+        </header>
+    );
 }
+
+
 
 export default Header;
