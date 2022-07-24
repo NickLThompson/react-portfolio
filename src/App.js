@@ -1,41 +1,41 @@
 import React, { useState } from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import About from './components/About';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Home from './components/Home';
+import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
-import './styles/App.css';
+import './App.css';
 
 
 function App() {
-    const [currentTab, setCurrentTab] = useState("Home");
+    const [currentPage, setCurrentPage] = useState("About");
 
-    // this checks which tab is open and then generates the proper tab when clicked
+    // this checks which Page is open and then generates the proper Page when clicked
 
-    const loadTab = () => {
-        switch (currentTab) {
-            case "Home":
-                return <Home />;
+    const loadPage = () => {
+        switch (currentPage) {
             case "About":
                 return <About />;
             case "Portfolio":
                 return <Portfolio />;
             case "Contact":
                 return <Contact />;
+            case "Resume":
+                return <Resume />;
             default:
-                return null;
+                return <About />;
         }
     };
 
-    
+
     return (
         <div>
             <div className="currentHeader">
-                <Header currentTab={currentTab} setCurrentTab={setCurrentTab}></Header>
+                <Header currentPage={currentPage} setCurrentPage={setCurrentPage}></Header>
             </div>
             <div>
-                <main>{loadTab()}</main>
+                <main>{loadPage()}</main>
             </div>
             <div>
                 <Footer></Footer>

@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from "./Navigation";
 
 function Header(props) {
-    const { currentTab, setCurrentTab } = props;
+    const { currentPage, setCurrentPage } = props;
 
     return (
         <header>
@@ -12,8 +12,8 @@ function Header(props) {
             </div>
             <div>
                 <Navigation
-                    currentTab = { currentTab }
-                    setcurrentTab = { setCurrentTab }>
+                    currentPage = { currentPage }
+                    setCurrentPage = { setCurrentPage }>
                 </Navigation>
             </div>
         </header>

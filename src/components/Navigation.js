@@ -1,22 +1,22 @@
 import React from 'react'
 
 function Navigation(props) {
-    const { currentTab, setCurrentTab } = props;
+    const { currentPage, setCurrentPage } = props;
 
     return (
         <nav>
             <ul className = "flex-row">
-                <li className = {currentTab === "Home" ? "mx-2 navActive" : "mx-2"}>
-                    <span onClick={() => setCurrentTab("Home")}>Home</span>
+                <li className = {currentPage === "About" ? "mx-2 navActive" : "mx-2"}>
+                    <span onClick={() => setCurrentPage("About Me")}>About Me</span>
                 </li>
-                <li className = {currentTab === "About Me" ? "mx-2 navActive" : "mx-2"}>
-                    <span onClick={() => setCurrentTab("About Me")}>About Me</span>
+                <li className = {currentPage === "Portfolio" ? "mx-2 navActive" : "mx-2"}>
+                    <span onClick={() => setCurrentPage("Portfolio")}>Portfolio</span>
                 </li>
-                <li className = {currentTab === "Portfolio" ? "mx-2 navActive" : "mx-2"}>
-                    <span onClick={() => setCurrentTab("Portfolio")}>Portfolio</span>
+                <li className = {currentPage === "Contact" ? "mx-2 navActive" : "mx-2"}>
+                    <span onClick={() => setCurrentPage("Contact")}>Contact</span>
                 </li>
-                <li className = {currentTab === "Contact" ? "mx-2 navActive" : "mx-2"}>
-                    <span onClick={() => setCurrentTab("Contact")}>Contact</span>
+                <li className = {currentPage === "Resume" ? "mx-2 navActive" : "mx-2"}>
+                    <span onClick={() => setCurrentPage("Resume")}>Resume</span>
                 </li>
             </ul>
         </nav>
