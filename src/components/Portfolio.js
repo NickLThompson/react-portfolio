@@ -22,7 +22,7 @@ function Portfolio() {
       description: "xyz",
       image: "MyJavaGame1.png",
       technologies: [
-
+        "",
       ],
     },
     {
@@ -30,7 +30,7 @@ function Portfolio() {
       description: "xyz",
       image: "PasswordGenerator.png",
       technologies: [
-
+        "",
       ],
     },
     {
@@ -38,7 +38,7 @@ function Portfolio() {
       description: "xyz",
       image: "SpiritsListed1.png",
       technologies: [
-
+        "",
       ],
     },
   ]
