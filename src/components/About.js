@@ -1,4 +1,22 @@
 import React from 'react'
+const styles = {
+  card: {
+      margin: 20,
+      background: "#000000",
+  },
+  heading: {
+      background: "#000000",
+      minHeight: 50,
+      lineHeight: 3.5,
+      fontSize: "1.2rem",
+      color: 'white',
+      padding: '0 20px',
+  },
+  content: {
+      padding: 20,
+      color: 'white',
+  },
+};
 
 function About() {
   return (
