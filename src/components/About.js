@@ -1,5 +1,6 @@
 import React from 'react'
 const styles = {
+  
   card: {
       margin: 20,
       background: "#000000",
