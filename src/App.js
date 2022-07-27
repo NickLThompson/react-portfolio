@@ -32,7 +32,7 @@ function App() {
     return (
         <div>
             <div className="currentHeader">
-                <Header currentPage={currentPage} setCurrentPage={setCurrentPage}></Header>
+                <Header currentPage = {currentPage} setCurrentPage = {setCurrentPage}></Header>
             </div>
             <div>
                 <main>{loadPage()}</main>
