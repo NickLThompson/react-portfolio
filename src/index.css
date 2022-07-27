@@ -6,17 +6,17 @@ main {
 
 :root {
 	--primary: #499167;
-	--secondary: #2E282A;
+	--secondary: rgb(72, 72, 72);
 	--tertiary: #f0f2a6;
 	--quaternary: #39a9db;
 	--quinary: #bfd7ea;
-	--light: #bfd7ea;
-	--dark: #353831;
+	--light: #eb8900;
+	--dark: rgb(35, 35, 35);
 	--darker: #39a9db;
 	--error: rgb(228, 46, 1);
 	--spacing-one: calc(1rem * 0.5);
 	--spacing-two: calc(1rem);
-	--spacing-five: calc(2.5rem);
+	--spacing-three: calc(2.5rem);
 }
 
 * {
@@ -31,14 +31,12 @@ body {
 body {
 	margin: 0;
 	padding: 0;
-	font-weight: 600;
+	font-weight: 500;
 	line-height: 1.5;
 	font-size: 18px;
-	letter-spacing: .1em;
 	background: var(--dark);
 	color: var(--light);
-	/* font-family: 'Poiret One', cursive; */
-	font-family: 'Courier New', Courier, monospace;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 h1,
@@ -47,8 +45,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
 	margin: 5px 0;
 	line-height: 1.25;
 }
@@ -59,10 +57,12 @@ h1 {
 
 h2 {
 	font-size: 2rem;
+    padding: 0 50px;
+    text-align: center;
 }
 
 h3 {
-	font-size: 1.75rem;
+	font-size: 1rem;
 }
 
 h4 {
@@ -83,7 +83,7 @@ p {
 }
 
 a {
-	color: red;
+	color: rgb(0, 149, 255);
 	text-decoration: none;
 	font-weight: bold;
 	border-radius: 5px;
@@ -131,8 +131,8 @@ button[disabled] {
 	opacity: .8;
 }
 
-img {
-	max-width: 100%;
+#PortfolioImage {
+	max-width: 30%;
 }
 
 span[role="img"] {
@@ -223,8 +223,8 @@ textarea {
 
 
 .my-5 {
-	margin-top: var(--spacing-five);
-	margin-bottom: var(--spacing-five);
+	margin-top: var(--spacing-three);
+	margin-bottom: var(--spacing-three);
 }
 
 .px-1 {
@@ -255,7 +255,7 @@ textarea {
 }
 
 .modalBackdrop {
-	background: rgba(0, 0, 0, .65);
+	background: rgba(128, 89, 89, 0.65);
 	bottom: 0;
 	left: 0;
 	overflow: auto;
@@ -307,9 +307,9 @@ textarea {
 	padding: 50px;
 }
 
-.logo {
-	width: 50px;
-	height: 50px;
+#LinkedInPicture, #GithubPicture {
+	width: 70px;
+	height: 70px;
 	margin-bottom: 50px;
 	cursor: pointer;
 }
@@ -324,16 +324,17 @@ textarea {
 }
 
 .page-header {
-	font-family: 'Roboto', sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 2.5em;
 	font-weight: 500;
 	margin: 5px 0;
 	line-height: 1.25;
 	padding-bottom: 2rem;
+    text-decoration: underline;
 }
 
 .bottom-spacing {
-	margin-bottom: var(--spacing-five);
+	margin-bottom: var(--spacing-three);
 }
 
 .card {
@@ -369,77 +370,10 @@ textarea {
 }
 
 .card-link {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 0.70rem;
 }
 
 .padding {
 	padding: 50px;
 }
-
-/* Viewports Styling start*/
-@media screen and (max-width: 980px) {}
-
-@media screen and (max-width: 817px) {
-	header div {
-		position: relative;
-		width: 110%;
-	}
-
-	header div h2 {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-	}
-
-	h2 {
-		font-size: 1.5rem;
-	}
-
-	nav ul li span {
-		font-size: 0.75em;
-	}
-
-	.mobile-header {
-		width: 110%;
-	}
-
-	.mobile-row {
-		display: block;
-		margin: 0 100px 0 auto;
-	}
-
-	.mobile-view {
-		display: inline;
-		text-align: end;
-	}
-
-	.photo {
-		width: auto;
-		height: auto;
-		max-width: 500px;
-		max-height: 300px;
-		padding: 50px;
-	}
-
-	input {
-		width: 350px;
-	}
-
-	textarea {
-		width: 350px;
-		height: 120px;
-		border: 3px solid #cccccc;
-		padding: 5px;
-	}
-
-	ol {
-		font-size: 0.75rem;
-	}
-}
-
-@media screen and (max-width: 768px) {}
-
-@media screen and (max-width: 575px) {}
-
-/* Viewports Styling end*/

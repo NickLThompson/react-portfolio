@@ -26,11 +26,11 @@ function About() {
         <h1 className = "page-header">About Me</h1>
       </div>
       <div className = "center">
-        <img src = {require("../images/PortfolioImage1.png")} alt = "about-me" className = "about-me"></img>
+        <img src = {require("../images/PortfolioImage1.png")} alt = "about-me" className = "about-me" id = "PortfolioImage"></img>
       </div>
       <div>
         <p>
-          My name is Nickolas Thompson, I'm 21 years old and I'm a full stack web developer. I've recently graduated from the UNC Charlotte Bootcamp with a certificate in full stack development. Through this bootcamp I have newly developed skills in Javascript, CSS, React, MySQL, Node, and other web design apps. I'll write more stuff here later but I can't think of anything right now.
+          My name is Nickolas Thompson, I'm 21 years old and I'm a full stack web developer. I've recently graduated from the UNC Charlotte Bootcamp with a certificate in full stack development. Through this bootcamp I have newly developed skills in Javascript, CSS, React, MySQL, Node, and other web design programs and apps. I have a Github Repo that highlights my strengths and weaknesses as a junior web developer entering the tech industry.
         </p>
       </div>
     </section>

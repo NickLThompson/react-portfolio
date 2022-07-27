@@ -21,7 +21,6 @@ function Resume() {
                 <li>Bootstrap</li>
                 <li>React</li>
                 <li>Git</li>
-                <li></li>
             </ol>
             <br></br>
             <h5>Back-End Proficiencies</h5>
@@ -31,8 +30,8 @@ function Resume() {
                 <li>MongoDB</li>
                 <li>Mongoose</li>
                 <li>MySQL</li>
-                <li></li>
-                <li></li>
+                <li>GraphQL</li>
+                <li>React</li>
             </ol>
         </div>
     </section>

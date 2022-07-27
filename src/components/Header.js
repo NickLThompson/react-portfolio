@@ -8,7 +8,6 @@ function Header(props) {
         <header>
             <div>
                 <h2>Nickolas Thompson</h2>
-                <h3>Junior Full Stack Web Developer</h3>
             </div>
             <div>
                 <Navigation

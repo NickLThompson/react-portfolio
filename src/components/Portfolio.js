@@ -65,19 +65,34 @@ function Portfolio() {
   return (
     <main>
         <div style={styles.card}>
-            <div style={styles.heading}>Trip Planner:</div>
+            <div style={styles.heading}>Book Nook:</div>
             <div style={styles.content}>
-                <p><a href="https://peaceful-waters-01684.herokuapp.com/">Live Site</a></p>
-                <p><a href="https://github.com/HarrisonHayes/trip-planner">Repository</a></p>
+                <p><a href="https://dry-bastion-57106.herokuapp.com/login">Live Site</a></p>
+                <p><a href="https://github.com/kleylakb89/book-nook">Repository</a></p>
                
             </div>
             <hr />
-            <div style={styles.heading}>Food and Drinks App</div>
+            <div style={styles.heading}>Random Password Generator:</div>
             <div style={styles.content}>
-                <p><a href="https://varuntanna.github.io/ProjectOne/">Live Site</a></p>
-                <p><a href="https://github.com/VarunTanna/ProjectOne">Repository</a></p>
+                <p><a href="https://nicklthompson.github.io/password-randomizer/">Live Site</a></p>
+                <p><a href="https://github.com/NickLThompson/password-randomizer">Repository</a></p>
 
             </div>
+            <hr />
+            <div style={styles.heading}>Java 2D Game:</div>
+            <div style={styles.content}>
+                <p><a href="https://www.awesomescreenshot.com/video/10179223?key=095ce6ba32c961ebd1d05be0fd4966be">Video Link</a></p>
+                <p><a href="">Repository (unavailable) </a></p>
+
+            </div>
+            <hr />
+            <div style={styles.heading}>Spirits Listed:</div>
+            <div style={styles.content}>
+                <p><a href="https://nicklthompson.github.io/Spirits-Listed/">Live Site</a></p>
+                <p><a href="https://github.com/NickLThompson/Spirits-Listed">Repository</a></p>
+
+            </div>
+            
 
         </div>
     </main>
